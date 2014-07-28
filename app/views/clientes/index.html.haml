@@ -1,0 +1,26 @@
+#region-clientes.container
+
+  .region
+    .region-title
+      %h1= page_title!('clientes')
+
+    .region
+      - if current_admin
+        .admin-control
+          = link_to 'Crear Cliente', new_cliente_path, class: 'btn btn-primary'
+
+      .table-responsive
+        %table.table
+          %tr
+            %th Link
+            %th Logo
+            %th
+            %th
+
+          - @clientes.each do |cliente|
+            %tr
+              %td= cliente.link
+              %td= image_tag cliente.logo_url(:thumb)
+              - if current_admin
+                %td= link_to 'Editar', edit_cliente_path(cliente), class: 'btn btn-success'
+                %td= link_to 'Eliminar', cliente, :method => :delete, :data => { :confirm => '¿Estás Seguro?' }, class: 'btn btn-danger'

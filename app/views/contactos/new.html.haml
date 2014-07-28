@@ -1,0 +1,26 @@
+- page_title!('Creando contacto')
+
+#region-contactos.container
+  .linea
+  .region-general
+    %h2.titulo-general
+      contacto  
+    %p.texto-generl
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  .clear
+  .region-contacto
+    .informacion    
+      = image_tag image_path('contacto-cel.png')
+      %span 986134697
+    .informacion
+      = link_to image_tag image_path('contacto-fb.png')
+      %span fb.com
+    .informacion
+      = image_tag image_path('contacto-mail.png')
+      = mail_to 'info@jemimagen.com'
+  .region-contactos
+    = render 'form'
+
+  .region
+    .admin-controls

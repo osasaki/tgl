@@ -1,0 +1,18 @@
+#region-servicios.container
+  .region
+    .region-title
+      %h1= page_title!('servicio')
+
+  .region
+    %p
+      %b Nombre:
+      = @servicio.nombre
+    %p
+      %b Foto:
+      = @servicio.foto
+
+  .region
+    - if current_admin
+      .admin-controls
+        = link_to 'Editar', edit_servicio_path(@servicio), class: 'btn btn-success'
+    = link_to 'Regresar', servicios_path, class: 'btn btn-warning'

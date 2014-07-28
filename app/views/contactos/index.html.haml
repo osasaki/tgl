@@ -1,0 +1,24 @@
+#region-contactos.container
+
+  .region
+    .region-title
+      %h1= page_title!('contactos')
+
+    .region
+      .table-responsive
+        %table.table
+          %tr
+            %th Nombre
+            %th Email
+            %th Telefono
+            %th Mensaje
+            %th
+
+          - @contactos.each do |contacto|
+            %tr
+              %td= contacto.nombre
+              %td= contacto.email
+              %td= contacto.telefono
+              %td= contacto.mensaje
+              - if current_admin
+                %td= link_to 'Eliminar', contacto, :method => :delete, :data => { :confirm => '¿Estás Seguro?' }, class: 'btn btn-danger'

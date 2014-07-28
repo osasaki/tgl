@@ -1,0 +1,10 @@
+@media (min-width: 0px) and (max-width: 359px){
+  .servicio{
+  width: 100%;
+  }
+}
+@media(max-width: 767px){
+  .informacion{ margin-bottom:20px !important; }
+  .form-group{margin:10px auto !important; }
+  .region-gerente{top:100px !important; .quotes{font-size: 20px;}}
+}
