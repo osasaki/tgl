@@ -1,19 +1,16 @@
 .clear{clear:both;}
-/*NAVIGATION*/
 
 .navbar.navbar-default{
 border-bottom: 7px solid $red;
 padding: 20px 0px ;
 background-color:white;
 }
-
+.navbar{margin-bottom: 0px;}
 .navbar-brand{padding: 0px;}
 .navbar-toggle{color: $light-gray;}
 .icon-bar{margin: 4px auto;text-align: center;}
 .nav > li{display:block; text-align:center; height: 40px;}
-.navbar-header{
-width: 60%;
-}
+.navbar-header{width: 73%;}
 
 .nav.navbar-nav{
   margin-right: auto;
@@ -66,11 +63,9 @@ margin-top:20px;
 text-align: right;
 }
 
-
-
 /*QUIENES SOMOS*/
 #region-QuienesSomos{
- margin-top: 120px;
+ margin-top: 50px;
  margin-bottom: 100px;
   img{
   padding-bottom: 10px;
@@ -91,7 +86,6 @@ text-align: right;
 /*INICIO*/
 #region-inicio .gerente{background:url(/assets/img-index-5.jpg); height: 500px;}
 #region-inicio{
- margin-top: 110px;
 .container-total{width: 100%;} 
 .container{margin-top: 40px; margin-bottom: 40px;}
 .title-inicio{color: $blue; text-align:right;}
@@ -138,13 +132,9 @@ width: 15%;
 .img-footer{text-align:right; }
 }
 }
-
-
-
 /*SERVICIOS*/
-
 #region-servicios{
-margin-top:120px;
+margin-top:50px;
 .region-servicios{margin-top: 50px;}
 .servicio{
       text-align: center;
@@ -152,19 +142,41 @@ img{margin-bottom:10px;}
   margin-bottom: 40px;
 }
 }
-
-
 /*CONTACTOS*/
-#region-contactos{
-margin-top: 120px;
+#region-contactos {
+    
+    margin-top: 50px;
+    animation: fade 4s;
+    -moz-animation: fade 4s; /* Firefox */
+    -webkit-animation: fade 4s; /* Safari and Chrome */
+    -o-animation: fade 4s; /* Opera */
+
+
+
 label{margin-bottom: 5px; color:$blue; font-weight: $bold;}
 .form-group{
 width: 80%;
-}
-.btn{border-color:$red;  color:$red; text-align: right;}
+}.btn{border-color:$red;  color:$red; text-align: right;}
 margin-bottom: 50px;
-.informacion{display: inline-block; margin-bottom: 150px; text-align: center; span,a{margin-left: 5px; color:$light-gray;}}
+.informacion{display: inline-block; text-align: center; span,a{margin-left: 5px; color:$light-gray;}}
 }
+
+@keyframes fade {
+    from {opacity:0; margin-top:0px;}
+    to {opacity:1;}}
+@-moz-keyframes fade { /* Firefox */
+   from {opacity:0;margin-top:0px;}
+    to {opacity:1;}}
+@-webkit-keyframes fade { /* Safari and Chrome */
+     from {opacity:0;margin-top:0px;}
+    to {opacity:1;}}
+@-o-keyframes fade { /* Opera */
+    from {opacity:0;margin-top:0px;}
+    to {opacity:1;}}
+
+
+
+
 
 
 
